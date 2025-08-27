@@ -10,7 +10,12 @@ public class Algorithms {
     }
 
     static boolean isPrime(int n) {
-
+        for (int i = 3; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return n != 1;
     }
 
     static int factorial(int n) {
