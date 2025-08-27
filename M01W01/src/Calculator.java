@@ -30,9 +30,10 @@ public class Calculator {
                     result = 0;
                     System.out.printf("Error: unknown operation");
             }
-            System.out.println(result);
+
         } catch (Exception e) {
             System.out.println("Error occured");
+            System.out.println(e.getStackTrace());
         }
     }
 
